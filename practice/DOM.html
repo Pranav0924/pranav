@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modifying DOM</h1>
+    <input type="text" id="iteminput" placeholder="Enter an item" />
+    <button id="addItemButton">Add Button</button>
+    
+    <ul id="itemlist"></ul>
+    
+    <script>
+        const button = document.getElementById('addItemButton');
+        const itemlist = document.getElementById('itemlist');
+        const iteminput = document.getElementById('iteminput');
+
+        button.addEventListener('click',function(){
+          if (iteminput.value.trim() !== ''){
+            let newitem = document.createElement("li")
+            newitem.textContent = iteminput.value;
+            let deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.style.marginLeft = "10px";
+            deleteButton.addEventListener('click',function(){
+                newitem.remove();
+            });
+            newitem.appendChild(deleteButton);
+            itemlist.appendChild(newitem)
+            
+            iteminput.value = ""
+        }
+    });
+
+           
+          
+    </script>
+</body>
+</html>

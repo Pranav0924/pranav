@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    /* body{
+        display: flex;
+       
+    } */
+     .container{
+        background-color: rgb(148, 231, 231);
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        /* justify-content: baseline; */
+        /* justify-content: center; */
+        /* justify-content:end; */
+        /* justify-content: space-between; */
+        /* justify-content:space-around; */
+        justify-content: space-evenly;
+     }
+     body{
+        background-color: antiquewhite;
+
+     }
+    .box{
+        height: 100px;
+        width: 100px;
+        border: 3px solid gray;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: rgb(171, 200, 99);
+        margin: 10px;
+        justify-content: space-evenly;
+
+    }
+     .box-one{
+        background-color: rgb(232, 67, 12);
+     }
+     .box-two{
+        background-color: rgb(237, 29, 167);
+     }
+     .box-three{
+        background-color: coral;
+     }
+</style>
+<body>
+    <!-- <div style="background-color: orange;">
+        division
+    </div>
+    <span style="background-color: blue;">Span</span> -->
+    <div class="container">
+        <div class="box box-one">1</div>
+        <div class="box box-two">2</div>
+        <div class="box box-three">3</div>
+        <div style="background-color: blueviolet; color: azure;">JFS14</div>
+    </div>
+</body>
+</html>

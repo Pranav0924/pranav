@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Example</title>
+  <style>
+    body {
+      font-size: 16px;
+      background-color: lightgray;
+    }
+
+      /* Styles for portrait orientation */
+      @media (orientation: portrait) {
+      body {
+        background-color: red;
+      }
+    }
+
+    /* Styles for landscape orientation */
+    @media (orientation: landscape) {
+      body {
+        background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Design with Media Queries</h1>
+  <p>Resize your browser window to see the background color and text size change.</p>
+</body>
+</html>
